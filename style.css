@@ -4,9 +4,19 @@
 }
 html,
 body {
+  background-color: black;
+  color: white;
   font-family: "Poiret One", sans-serif;
   width: 100%;
   height: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  height: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1,
@@ -15,5 +25,92 @@ h3,
 h4,
 h5,
 h6 {
+  color: darkred;
   font-family: "Spirax", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 8rem;
+  margin-bottom: 40px;
+}
+nav {
+  font-family: "Spirax", sans-serif;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1280px;
+  background: rgba(10, 10, 20, 0.7);
+  z-index: 1;
+}
+
+nav div {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav a {
+  font-family: "Spirax", sans-serif;
+  color: white;
+  line-height: 5rem;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.redbox {
+  font-size: 2rem;
+  background-color: rgba(162, 1, 1, 0.6);
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.leftput {
+  transform: translateX(-100px);
+}
+
+.rightput {
+  transform: translateX(100px);
+}
+
+section {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#hot {
+  background-image: url("hot.jpg");
+  background-size: cover;
+  height: 100%;
+  border-bottom: 20px solid darkred;
+}
+
+#juicy {
+  background-image: url("juicy.jpg");
+  background-size: cover;
+  height: 100%;
+  border-bottom: 20px solid darkred;
+}
+
+#cosy {
+  background-image: url("cosy.jpg");
+  background-size: cover;
+  height: 100%;
+}
+
+table {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem 3rem;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+table tr td:nth-child(2n) {
+  text-align: right;
 }
